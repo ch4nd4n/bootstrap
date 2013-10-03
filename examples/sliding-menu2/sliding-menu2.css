@@ -1,0 +1,43 @@
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.viewport {
+  position: relative;
+  width: 200%;
+  margin-left: -50%;
+}
+.viewport .left-menu,
+.viewport .right-menu {
+  postion: relative;
+  width: 25%;
+  float: left;
+  background: #ccc;
+  overflow: auto;
+}
+.viewport .main-content {
+  width: 50%;
+  float: left;
+  overflow: auto;
+}
+.viewport .main-content .navbar {
+  position: fixed;
+  width: 100%;
+}
+.viewport .main-content .content {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+.slide {
+  -webkit-transition: margin-left 0.35s ease;
+  -moz-transition: margin-left 0.35s ease;
+  -o-transition: margin-left 0.35s ease;
+  transition: margin-left 0.35s ease;
+}
+.viewport.left {
+  margin-left: 0;
+}
+.viewport.right {
+  margin-left: -100%;
+}
